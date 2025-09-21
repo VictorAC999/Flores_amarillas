@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Día de las Flores Amarillas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+   <div class="video-background">
+<video autoplay loop muted playsinline>
+ <source src="Fondo de vídeo movimiento - flores amarillas, luz amarilla y mariposas (free video background).mp4" type="video/mp4">
+
+ </video>
+ </div>
+    <div class="card">
+        <div class="header">
+            <h1>Feliz Día de las Flores Amarillas Mochita </h1>
+            <p>21 de Septiembre</p>
+        </div>
+        <div class="image-container">
+            <img src="f1.jpg" alt="Ramo de flores amarillas">
+        </div>
+        <div class="short-message">
+            <p>Oye...quiero que sepas...</p>
+            <p>Que TE QUIERO MUCHO, tú haces que mi vida sea tan increible.</p>
+            <button id="open-button">Abrir Mi Corazón</button>
+        </div>
+        <div id="full-message" class="full-message hidden">
+            <h2>Para Mi Mochita</h2>
+            <p>Mi niña mosha</p>
+            <p>En este Día, quiero expresarte todo lo que siento en mi corazón, eres como un campo de flores amarillas que ilumina mis días, llenando mi vida de alegría y color. Cada momento a tu lado es un tesoro que atesoro profundamente.</p>
+            <p>Recuerdo la primera vez que te vi, cómo tu sonrisa brillaba como el sol y cómo desde ese instante supe que quería pasar el resto de mi vida contigo. Tu amor es como el amarillo de estas flores: cálido, vibrante y lleno de vida. Tu risa es la melodía más dulce que he escuchado, y tu cariño es el regalo más valioso que he recibido.</p>
+            <p>Quiero prometerte que siempre estaré a tu lado, en las buenas y en las malas, apoyándote y queriéndote muchoo. Eres mi inspiración, mi fortaleza y mi razón para ser mejor cada día. Gracias por permitirme estar contigo y por ser tú.</p>
+            <p class="signature">Con todo mi amor para ti...</p>
+
+             <div class="button">
+        <button class="botones">
+            <a href="flower.html" style="color: #fff;">Presiona aqui mochita de mi corazón.</a>
+        </button>
+    </div>
+        </div>
+    </div>
+    <script >
+        document.addEventListener('DOMContentLoaded', () => {
+    const openButton = document.getElementById('open-button');
+    const fullMessage = document.getElementById('full-message');
+
+    openButton.addEventListener('click', () => {
+        if (fullMessage.classList.contains('hidden')) {
+            fullMessage.classList.remove('hidden');
+            openButton.textContent = 'Cerrar Mensaje';
+        } else {
+            fullMessage.classList.add('hidden');
+            openButton.textContent = 'Abrir Mi Corazón';
+        }
+    });
+});
+    </script>
+</body>
+</html>
